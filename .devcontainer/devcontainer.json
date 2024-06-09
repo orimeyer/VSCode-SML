@@ -1,0 +1,19 @@
+{
+	"name": "SML",
+	"image": "whitomtit/vscode-smlnj",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"extensions": [
+				"danielraggi.sml-environment-2024"
+			]
+		},
+		"settings": {
+			"sml-environment-interpreter-path": "rlwrap smlnj"
+		}
+	},
+	
+	"postCreateCommand": "chmod +x .devcontainer/fetch-git.sh && ./.devcontainer/fetch-git.sh"
+}
