@@ -2,7 +2,7 @@
 fun sig1 f g x = g (f x)
 
 (* 2. 'a -> ('a -> 'a) -> 'a *)
-fun sig2 x f = f x
+fun sig2 x f = f (f x)
 
 (* 3. ('a * 'b -> 'c) -> 'a -> 'b -> 'c *)
 fun sig3 f x y = f (x, y)
